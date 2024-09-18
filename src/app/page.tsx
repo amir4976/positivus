@@ -1,5 +1,6 @@
 import Navbar from '@/components/modules/Navbar/Navbar'
 import Landing from '@/components/templates/landing/Landing'
+import MarqueeComponent from '@/components/templates/marquee/Marquee'
 import React from 'react'
 
 function page() {
@@ -8,6 +9,8 @@ function page() {
       <div className="container w-max-7xl ">
         <Navbar/>
         <Landing />
+        <MarqueeComponent />
+        
       </div>
     </div>
   )

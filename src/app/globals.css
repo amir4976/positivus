@@ -79,4 +79,7 @@ body {
   .Landing-Text button{
     @apply  mt-7 text-start text-xl text-white font-sg_Bold bg-DarkDef p-4 rounded-lg ;
   }
+
+
+
 }
