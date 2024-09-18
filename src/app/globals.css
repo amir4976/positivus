@@ -29,12 +29,12 @@
 
 
 :root {
-  --background: #F3f3f3;
+  --background: #fff;
   --foreground: #191A23;
   
   --green-default:#B9FF66;
   --dark-default:#191A23;
-  --white-default:#F3f3ff;
+  --white-default:#F3f3f3;
 
   /* fonts */
   --SG-BOLD: 'SpaceGroTesk-bold';
@@ -80,6 +80,12 @@ body {
     @apply  mt-7 text-start text-xl text-white font-sg_Bold bg-DarkDef p-4 rounded-lg ;
   }
 
+}
 
-
+.shadow-box{
+  box-shadow: #191A23 5px 5px  ;
+  transition: all 0.1s;
+}
+.shadow-box:hover{
+  box-shadow: #191A23 15px 15px ;
 }
