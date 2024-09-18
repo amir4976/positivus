@@ -15,6 +15,14 @@ const config: Config = {
         DarkDef: "var(--dark-default)",
         whiteDef: "var(--white-default)",
       },
+      fontFamily:{
+        sg_Bold:'var(--SG-BOLD)',
+        sg_light:'var(--SG-LIGHT)',
+        sg_medium:'var(--SG-MEDIUM)',
+        sg_regular:'var(--SG-REGULAR)',
+        sg_semibold:'var(--SG-SEMIBOLD)',
+        sg_var:'var(--SG-VARIABLE)'
+      }
     },
   },
   plugins: [],

@@ -2,19 +2,53 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: SpaceGroTesk-bold;
+  src: url('./fonts/SpaceGrotesk-Bold-BF65712b4f9ac68.ttf');
+}
+@font-face {
+  font-family: SpaceGroTesk-Light;
+  src: url('./fonts/SpaceGrotesk-Light-BF65712b4fc80d0.ttf');
+}
+@font-face {
+  font-family: SpaceGroTesk-medium;
+  src: url('./fonts/SpaceGrotesk-Medium-BF65712b4fd0ef9.ttf');
+}
+@font-face {
+  font-family: SpaceGroTesk-regular;
+  src: url('./fonts/SpaceGrotesk-Regular-BF65712b4fdc934.ttf');
+}
+@font-face {
+  font-family: SpaceGroTesk-semiBold;
+  src: url('./fonts/SpaceGrotesk-SemiBold-BF65712b4fe55fc.ttf');
+}
+@font-face {
+  font-family: SpaceGroTesk-variableFont;
+  src: url('./fonts/SpaceGrotesk-VariableFont_wght-BF65712b500c2f2.ttf');
+}
+
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #F3f3f3;
+  --foreground: #191A23;
   
   --green-default:#B9FF66;
   --dark-default:#191A23;
   --white-default:#F3f3ff;
+
+  /* fonts */
+  --SG-BOLD: 'SpaceGroTesk-bold';
+  --SG-LIGHT: 'SpaceGroTesk-Light';
+  --SG-MEDIUM: 'SpaceGroTesk-medium';
+  --SG-REGULAR: 'SpaceGroTesk-regular';
+  --SG-SEMI-BOLD: 'SpaceGroTesk-semiBold';
+  --SG-VARIABLE: 'SpaceGroTesk-variableFont';
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: Light) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #191A23;
+    --foreground: #F3f3ff;
 
   }
 }
@@ -28,5 +62,21 @@ body {
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+
+@layer components {
+  .Landing-Text{
+    @apply  flex flex-col justify-around ;
+  }
+  .Landing-Text h1{
+    @apply  text-start text-7xl font-bold;
+  }
+  .Landing-Text p{
+    @apply  mt-7 text-start text-2xl font-sg_regular;
+  }
+  .Landing-Text button{
+    @apply  mt-7 text-start text-xl text-white font-sg_Bold bg-DarkDef p-4 rounded-lg ;
   }
 }
