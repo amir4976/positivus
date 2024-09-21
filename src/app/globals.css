@@ -84,8 +84,24 @@ body {
 
 .shadow-box{
   box-shadow: #191A23 5px 5px  ;
-  transition: all 0.1s;
+  transition: all 0.2s;
 }
 .shadow-box:hover{
   box-shadow: #191A23 15px 15px ;
+  transform: scale(1.01);
 }
+
+.TestimonialCard::before{
+  content: '';
+  background-image: url('/B.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  width: 100%;
+  height: 230px; 
+  padding: 10px;
+
+}
+
+

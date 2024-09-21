@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Button from "@/components/modules/button/Button";
 function Landing() {
   return (
     <div className="grid grid-cols-1  gap-10  mt-20 lg:grid-cols-2">
@@ -16,9 +17,7 @@ function Landing() {
         </p>
 
         <div className="btn">
-        <button >
-            book a consultation
-        </button>
+          <Button text="Get your free proposal" />
         </div>
       </div>
       <div className="image flex justify-center items-center">

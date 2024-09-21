@@ -5,7 +5,7 @@ interface TitleProps {
 }
 function Title({title,subtitle}:TitleProps) {
   return (
-    <div className='w-full flex justify-start gap-6 h-fit mt-10 max-sm:flex-col max-sm:justify-center'>
+    <div className='w-full flex justify-start gap-6 h-fit my-20 max-sm:flex-col max-sm:justify-center'>
     <div>
     <h1 className='text-4xl bg-greenDef p-3 font-sg_Bold max-sm:text-center' >{title}</h1>
     </div>

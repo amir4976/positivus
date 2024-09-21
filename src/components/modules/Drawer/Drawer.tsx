@@ -12,10 +12,10 @@ function Drawer({num,title,text}:Props) {
         
         <div className="w-full flex justify-between items-center">
             <div className="flex items-center">
-              <span className='font-sg_Bold text-7xl'>{num}</span>
-              <span className='font-sg_reqular text-4xl px-3'>{title}</span>
+              <span className='font-sg_Bold text-7xl max-md:text-5xl'>{num}</span>
+              <span className='font-sg_reqular text-4xl px-3 max-md:text-lg'>{title}</span>
             </div>
-            <button className="rounded-full bg-white text-5xl w-12 h-12  border-black border flex justify-center items-center " onClick={()=>setIsShow(!isShow)}>
+            <button className="rounded-full bg-white text-5xl w-10 h-10  border-black border flex justify-center items-center " onClick={()=>setIsShow(!isShow)}>
               +
             </button>
         </div>
