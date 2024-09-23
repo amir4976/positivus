@@ -11,7 +11,9 @@ function Contact() {
           Contact us today to learn more about how our digital marketing
           services can help your business grow and succeed online.
         </p>
+        <div className="mt-7">
         <Button text=" Get your free proposal"/>
+        </div>
 
       </div>
       <div className="col-span-1 relative flex justify-center ">

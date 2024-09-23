@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import Button from "../button/Button";
 interface NavbarProps {
     title:sting
 }
@@ -23,10 +24,10 @@ function Navbar() {
               return <li  key={index}>{item.title}</li>;
             })}
         </ul>
-        <button className="w-56 border-black border rounded-lg ">
+        <div className="ml-8">
+        <Button text="Request a quote"/>
+        </div>
 
-            Request a quote
-        </button>
       </div>
     </div>
 

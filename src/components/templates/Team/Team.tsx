@@ -9,7 +9,8 @@ function Team() {
         <TeamCard />
         <TeamCard />
       </div>
-      <div className="w-full flex justify-end">
+
+      <div className="w-full flex justify-end mt-7">
         <Button text={"View all"} />
       </div>
     </>

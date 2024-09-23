@@ -12,7 +12,7 @@ function Testimonials() {
     <Swiper 
         className='w-full flex md:flex-col'
       spaceBetween={50}
-      slidesPerView={window.innerWidth < 1000 ? 1 : 3}
+      slidesPerView={3}
       onSlideChange={() => console.log('slide change')}
       onSwiper={(swiper) => console.log(swiper)}
       modules={[Autoplay, Pagination, Navigation]}

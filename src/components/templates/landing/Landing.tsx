@@ -16,7 +16,7 @@ function Landing() {
           marketing, and content creation.
         </p>
 
-        <div className="btn">
+        <div className="w-fit h-fit ">
           <Button text="Get your free proposal" />
         </div>
       </div>

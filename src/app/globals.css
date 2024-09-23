@@ -77,7 +77,7 @@ body {
     @apply  mt-7 text-start text-2xl font-sg_regular;
   }
   .Landing-Text button{
-    @apply  mt-7 text-start text-xl text-white font-sg_Bold bg-DarkDef p-4 rounded-lg ;
+    @apply inline mt-7 text-start text-xl font-sg_Bold p-4 rounded-lg ;
   }
 
 }
