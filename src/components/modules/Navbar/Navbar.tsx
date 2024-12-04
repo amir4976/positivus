@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import Button from "../button/Button";
 interface NavbarProps {
-    title:sting
+    title:string
 }
 function Navbar() {
   const Navitems:NavbarProps[] = [

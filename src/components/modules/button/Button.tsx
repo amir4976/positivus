@@ -4,14 +4,16 @@ import { useRef,useState } from 'react';
 import {motion} from 'framer-motion';
 
 function Button({text}:{text:string}) {
-  const ref = useRef(null);
+  const ref = useRef<HTMLDivElement>(null);
   const [position,setPosition] = useState({x:0,y:0})
-  const handelMouse = (e)=>{
+  const handelMouse = (e: { clientX: number; clientY: number; })=>{
     const {clientX,clientY} = e;
-    const {height,width,left,top} = ref.current.getBoundingClientRect();
-    const Middlex = clientX - left - width/2;
-    const Middley = clientY - top - height/2;
-    setPosition({x:Middlex,y:Middley})
+    if (ref.current) {
+      const {height,width,left,top} =  ref.current.getBoundingClientRect();
+      const Middlex = clientX - left - width/2;
+      const Middley = clientY - top - height/2;
+      setPosition({x:Middlex,y:Middley});
+    }
   }
   const reset =()=>{
     setPosition({x:0,y:0})
@@ -36,6 +38,4 @@ function Button({text}:{text:string}) {
     </motion.div>
       </div>
   )
-}
-
-export default Button
+}export default Button

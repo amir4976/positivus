@@ -1,19 +1,17 @@
 'use client'
-
-import Button from "@/components/modules/button/Button";
 import Input from "@/components/modules/Input/Input";
 import Image from "next/image";
 import React, { useState } from "react";
 
 function ContactUs() {
-  const [name,setName] = useState()
-  const [email,setEmail] = useState()
-  const [message,setMessage] = useState()
+  const [name, setName] = useState<string | undefined>(undefined);
+  const [email, setEmail] = useState<string | undefined>(undefined);
+  const [message, setMessage] = useState<string | undefined>(undefined);
 
-  const setData = ()=>{
-    console.log(name,email,message)
+  const setData = () => {
+    console.log(name, email, message);
   }
-    return (
+  return (
     <div className="contact-us-form w-full min-h-[720px] grid grid-cols-1 md:grid-cols-3 p-10 md:p-16 bg-whiteDef rounded-3xl relative overflow-hidden">
       <div className="col-span-2">
         <div className="flex gap-5">
@@ -40,5 +38,4 @@ function ContactUs() {
     </div>
   );
 }
-
 export default ContactUs;
