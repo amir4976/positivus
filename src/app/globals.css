@@ -91,17 +91,50 @@ body {
   transform: scale(1.01);
 }
 
-.TestimonialCard::before{
-  content: '';
-  background-image: url('/B.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  position: absolute;
-  width: 100%;
-  height: 230px; 
-  padding: 10px;
 
+
+.intero {
+    animation: intero 0.5s ease-in-out;
+}
+@keyframes intero {
+    0% {
+      opacity: 0;
+      transform: scale(0);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
 }
 
+.intero-li1 {
+  animation: intero-li 0.5s ease-in-out;
+}
+.intero-li2 {
+  animation: intero-li 1s ease-in-out;
+}
+.intero-li3 {
+  animation: intero-li 1.5s ease-in-out;
+}
+.intero-li4 {
+  animation: intero-li 2s ease-in-out;
+}
+.intero-li5 {
+  animation: intero-li 2.5s ease-in-out;
+}
 
+@keyframes intero-li {
+  0% {
+    opacity: 0;
+    transform:translateX(-100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+}

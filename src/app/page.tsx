@@ -1,4 +1,4 @@
-import Navbar from '@/components/modules/Navbar/Navbar'
+
 import Landing from '@/components/templates/landing/Landing'
 import MarqueeComponent from '@/components/templates/marquee/Marquee'
 import React from 'react'
@@ -14,8 +14,7 @@ import Footer from '@/components/modules/Footer/Footer'
 function page() {
   return (
     <div className='w-full h-fit flex justify-center'>
-      <div className="container w-max-7xl max-md:px-5 ">
-        <Navbar/>
+      <div className="container max-w-[96rem] max-md:px-5 ">
         <Landing />
         <MarqueeComponent />
         <Title title="Services" subtitle="At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:"/>

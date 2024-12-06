@@ -6,7 +6,6 @@ function TestimonialsCard() {
         <div className=" w-full h-fit p-10 text-center ">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Non tenetur
-            quidem enim ullam possimus Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, recusandae.
           </p>
         </div>
       </div>
